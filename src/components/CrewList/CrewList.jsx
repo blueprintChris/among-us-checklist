@@ -1,7 +1,7 @@
 import React from 'react'
 import { Wrapper } from './styles';
 import Crewmate from '../Crewmate';
-import { crew } from '../../crew';
+import { crew } from '../../data';
 
 const CrewList = () => {
   return (

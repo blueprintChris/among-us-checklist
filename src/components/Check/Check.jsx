@@ -2,11 +2,11 @@ import React from 'react';
 import { Wrapper, Container, Checkbox, Checkmark } from './styles';
 
 const Check = (props) => {
-  const { label } = props;
+  const { label, colour } = props;
 
   return (
     <Wrapper>
-      <Container>{label}
+      <Container colour={colour}>{label}
         <Checkbox />
         <Checkmark />
       </Container>

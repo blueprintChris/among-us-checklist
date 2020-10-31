@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ImposterList = (props) => {
-  return (null);
+  return (<div></div>);
 }
 
 export default ImposterList;

@@ -1,18 +1,19 @@
-import React from 'react'
-import { Wrapper, Avatar, Note, Content } from './styles';
-import Check from '../Check';
+import React, { useState } from 'react'
+import { Wrapper, Avatar } from './styles';
+import CheckList from '../CheckList'
 
 const Crewmate = (props) => {
+  const [isActive, setIsActive] = useState(true);
   const { src, colour } = props;
+
+  const handleActiveCrewmate = () => {
+    setIsActive(!isActive)
+  };
+
   return (
-    <Wrapper colour={colour}>
-      <Avatar src={src} />
-      <Content>
-        <Check label="Safe" />
-        <Check label="Sus" />
-        <Check label="Dead" />
-        <Note placeholder="Notes.." />
-      </Content>
+    <Wrapper colour={colour} isActive={isActive}>
+      <Avatar src={src} onClick={handleActiveCrewmate} />
+      <CheckList isActive={isActive} />
     </Wrapper>
   );
 }

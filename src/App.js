@@ -1,4 +1,3 @@
-import './App.css';
 import { Wrapper, Content } from './styles';
 import CrewList from './components/CrewList';
 

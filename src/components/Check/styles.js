@@ -5,7 +5,11 @@ export const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin-right: 20px;
+
+  @media only screen and (max-width: 630px) {
+    margin-right: 10px;
+  }
 `;
 
 export const Checkmark = styled.span`
@@ -16,6 +20,7 @@ export const Checkmark = styled.span`
   width: 25px;
   background-color: #eee;
   border-radius: 5px;
+  border: 1px solid black;
 
   &:after {
     content: "";
@@ -46,6 +51,12 @@ export const Container = styled.label`
       &:after {
         display: block;
       }
+    }
+  }
+
+  input {
+    &:checked ~ ${Checkmark} {
+      background-color: ${props => props.colour};
     }
   }
 

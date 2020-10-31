@@ -60,3 +60,18 @@ export const crew = [
     colour: "#51EF39"
   }
 ]
+
+export const checklist = [
+  {
+    label: 'Safe',
+    colour: 'green'
+  },
+  {
+    label: 'Sus',
+    colour: 'orange'
+  },
+  {
+    label: 'Dead',
+    colour: 'red'
+  }
+];
