@@ -1,10 +1,14 @@
 import './App.css';
+import { Wrapper, Content } from './styles';
+import CrewList from './components/CrewList';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <Wrapper>
+      <Content>
+        <CrewList />
+      </Content>
+    </Wrapper>
   );
 }
 
