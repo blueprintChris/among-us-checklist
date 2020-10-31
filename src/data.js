@@ -1,62 +1,62 @@
 export const crew = [
   {
     name: 'Red',
-    src: 'red.png',
+    src: 'images/red.png',
     colour: "#c51111"
   },
   {
     name: 'Blue',
-    src: 'blue.png',
+    src: 'images/blue.png',
     colour: "#132FD2"
   },
   {
     name: 'Green',
-    src: 'green.png',
+    src: 'images/green.png',
     colour: "#127F2D"
   },
   {
     name: 'Pink',
-    src: 'pink.png',
+    src: 'images/pink.png',
     colour: "#ED54BA"
   },
   {
     name: 'Orange',
-    src: 'orange.png',
+    src: 'images/orange.png',
     colour: "#f17d0e"
   },
   {
     name: 'Yellow',
-    src: 'yellow.png',
+    src: 'images/yellow.png',
     colour: "#f3f457"
   },
   {
     name: 'Black',
-    src: 'black.png',
+    src: 'images/black.png',
     colour: "#3F484E"
   },
   {
     name: 'White',
-    src: 'white.png',
+    src: 'images/white.png',
     colour: "#D6E0F0"
   },
   {
     name: 'Purple',
-    src: 'purple.png',
+    src: 'images/purple.png',
     colour: "#6A2FB9"
   },
   {
     name: 'Brown',
-    src: 'brown.png',
+    src: 'images/brown.png',
     colour: "#72491E"
   },
   {
     name: 'Cyan',
-    src: 'cyan.png',
+    src: 'images/cyan.png',
     colour: "#38fedc"
   },
   {
     name: 'Lime',
-    src: 'lime.png',
+    src: 'images/lime.png',
     colour: "#51EF39"
   }
 ]

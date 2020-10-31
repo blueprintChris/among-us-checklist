@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
 
 export const Checkmark = styled.span`
   position: absolute;
-  top: 0;
   left: 0;
   height: 25px;
   width: 25px;

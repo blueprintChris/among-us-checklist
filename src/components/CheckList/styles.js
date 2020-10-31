@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Note = styled.input`
-  height: 25px;
+  height: 20px;
   flex: 1;
   border-radius: 5px;
   border: 1px solid grey;
