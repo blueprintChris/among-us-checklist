@@ -59,7 +59,7 @@ export const crew = [
     src: 'images/lime.png',
     colour: "#51EF39"
   }
-]
+];
 
 export const checklist = [
   {

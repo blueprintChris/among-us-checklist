@@ -1,15 +1,16 @@
 import React from 'react'
-import { Wrapper } from './styles';
+import { Wrapper, Label } from './styles';
 import Crewmate from '../Crewmate';
-import { crew } from '../../data';
 
-const CrewList = () => {
+const CrewList = (props) => {
+  const { label, crew } = props;
+
   return (
     <Wrapper>
-      { crew.map(crewMate =>
-        <Crewmate key={crewMate.name} src={crewMate.src} colour={crewMate.colour} />
+      <Label>{label}</Label>
+      {crew.map(crewmate =>
+        <Crewmate key={crewmate.name} crewmate={crewmate} />
       )}
-
     </Wrapper>
   );
 }

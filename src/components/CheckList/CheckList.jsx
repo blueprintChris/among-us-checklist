@@ -2,6 +2,7 @@ import React from 'react';
 import { Wrapper, Note } from './styles';
 import Check from '../Check';
 import { checklist } from '../../data';
+import data from '../../data.json'
 
 const CheckList = (props) => {
   const { isActive } = props;

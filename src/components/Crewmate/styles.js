@@ -10,7 +10,7 @@ export const Wrapper = styled.li`
   flex: 1;
   padding: 10px 20px;
   box-sizing: border-box;
-  background-color: ${props => props.isActive ? hex2rgba('#cccccc', .9) : 'grey'};
+  background-color: #cccccc;
 
   @media only screen and (max-width: 630px) {
     padding: 5px 20px;
