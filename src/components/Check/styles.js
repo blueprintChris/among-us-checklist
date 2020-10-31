@@ -37,7 +37,7 @@ export const Container = styled.label`
   position: relative;
   padding-left: 35px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 30px;
 
   input {
     position: absolute;
@@ -56,12 +56,6 @@ export const Container = styled.label`
   input {
     &:checked ~ ${Checkmark} {
       background-color: ${props => props.colour};
-    }
-  }
-
-  &:hover {
-    ${Checkmark} {
-      background-color: #ccc;
     }
   }
 

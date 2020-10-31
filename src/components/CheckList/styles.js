@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  font-weight: 500;
+  font-weight: 600;
 
   @media only screen and (max-width: 630px) {
     flex-wrap: wrap;
@@ -21,6 +21,8 @@ export const Note = styled.input`
   padding: 5px;
   line-height: 1.2rem;
   min-width: 200px;
+  font-family: 'Joffrey';
+  font-size: 25px;
 
   @media only screen and (max-width: 630px) {
     display: none;
