@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   align-items: center;
   height: 50px;
   margin-bottom: 10px;
+
+  @media only screen and (max-width: 630px) {
+    height: 28px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -20,4 +24,8 @@ export const Label = styled.div`
   height: 100%;
   font-size: 3.5rem;
   color: white;
+
+  @media only screen and (max-width: 630px) {
+    font-size: 2rem;
+  }
 `;

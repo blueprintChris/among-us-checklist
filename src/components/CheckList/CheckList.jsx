@@ -8,7 +8,7 @@ const CheckList = (props) => {
   return (
     <Wrapper>
       {Object.keys(crewmate.states).map(state =>
-        <Check key={state.name} crewmate={crewmate} state={state} isActive={isActive} />
+        <Check key={crewmate.states[state].name} crewmate={crewmate} state={state} isActive={isActive} />
       )}
       <Note placeholder="Notes..." disabled={!isActive} />
     </Wrapper>
