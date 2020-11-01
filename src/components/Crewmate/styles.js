@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { hex2rgba } from '../../helpers/hex2Rgba'
 
 export const Wrapper = styled.li`
   display: flex;
@@ -10,7 +9,7 @@ export const Wrapper = styled.li`
   flex: 1;
   padding: 10px 20px;
   box-sizing: border-box;
-  background-color: #cccccc;
+  background-color: ${props => props.isActive ? '#cccccc' : 'grey'};
 
   @media only screen and (max-width: 630px) {
     padding: 5px 20px;

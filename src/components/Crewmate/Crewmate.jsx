@@ -1,24 +1,26 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import CrewContext from '../../context/CrewContext';
 import CheckList from '../CheckList'
 import { Wrapper, Avatar } from './styles';
 
 const Crewmate = (props) => {
-  const { activeCrew, inactiveCrew, setActiveCrew, setInactiveCrew } = useContext(CrewContext)
+  const { crewList, setCrewList } = useContext(CrewContext);
   const { crewmate } = props;
   const { src, colour } = crewmate;
 
   const handleActiveCrewmate = () => {
+    const newCrewmate = { ...crewmate };
+    newCrewmate.isActive = !newCrewmate.isActive;
 
-    const newCrew = activeCrew.filter(item => item !== crewmate);
-    setActiveCrew(newCrew);
+    const newCrewList = [...crewList];
+    const index = newCrewList.indexOf(crewmate);
+    newCrewList.splice(index, 1, newCrewmate)
 
-    inactiveCrew.push(crewmate);
-    // setInactiveCrew(inactiveCrew)
+    setCrewList(newCrewList);
   };
 
   return (
-    <Wrapper colour={colour}>
+    <Wrapper colour={colour} isActive={crewmate.isActive}>
       <Avatar src={src} onClick={handleActiveCrewmate} />
       <CheckList />
     </Wrapper>

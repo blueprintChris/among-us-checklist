@@ -2,62 +2,110 @@ export const crew = [
   {
     name: 'Red',
     src: 'images/red.png',
-    colour: "#c51111"
+    colour: "#c51111",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Blue',
     src: 'images/blue.png',
-    colour: "#132FD2"
+    colour: "#132FD2",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Green',
     src: 'images/green.png',
-    colour: "#127F2D"
+    colour: "#127F2D",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Pink',
     src: 'images/pink.png',
-    colour: "#ED54BA"
+    colour: "#ED54BA",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Orange',
     src: 'images/orange.png',
-    colour: "#f17d0e"
+    colour: "#f17d0e",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Yellow',
     src: 'images/yellow.png',
-    colour: "#f3f457"
+    colour: "#f3f457",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Black',
     src: 'images/black.png',
-    colour: "#3F484E"
+    colour: "#3F484E",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'White',
     src: 'images/white.png',
-    colour: "#D6E0F0"
+    colour: "#D6E0F0",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Purple',
     src: 'images/purple.png',
-    colour: "#6A2FB9"
+    colour: "#6A2FB9",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Brown',
     src: 'images/brown.png',
-    colour: "#72491E"
+    colour: "#72491E",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Cyan',
     src: 'images/cyan.png',
-    colour: "#38fedc"
+    colour: "#38fedc",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   },
   {
     name: 'Lime',
     src: 'images/lime.png',
-    colour: "#51EF39"
+    colour: "#51EF39",
+    isActive: true,
+    isDead: false,
+    isSus: false,
+    isSafe: false
   }
 ];
 

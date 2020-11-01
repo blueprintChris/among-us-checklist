@@ -12,5 +12,5 @@ export const Wrapper = styled.ul`
 export const Label = styled.div`
   font-size: 25px;
   color: white;
-  margin-bottom: 5px;
+  margin: 10px 0 5px 0;
 `;
