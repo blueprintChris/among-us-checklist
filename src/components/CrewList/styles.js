@@ -10,7 +10,14 @@ export const Wrapper = styled.ul`
 `;
 
 export const Label = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
   font-size: 25px;
   color: white;
   margin: 10px 0 5px 0;
+`;
+
+export const Subtext = styled.div`
+  font-size: 1rem;
 `;

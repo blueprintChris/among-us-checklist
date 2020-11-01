@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, Label } from './styles';
+import { Wrapper, Label, Subtext } from './styles';
 import Crewmate from '../Crewmate';
 
 const CrewList = (props) => {
@@ -8,7 +8,7 @@ const CrewList = (props) => {
   return (
     <Wrapper>
       {crew.find(crewmate =>
-        crewmate.isActive) && <Label>Active Crewmates</Label>
+        crewmate.isActive) && <Label>Active Crewmates<Subtext>&nbsp;(Click on crewmate to remove from game)</Subtext></Label>
       }
       {crew.map(crewmate =>
         crewmate.isActive && <Crewmate key={crewmate.name} crewmate={crewmate} />
