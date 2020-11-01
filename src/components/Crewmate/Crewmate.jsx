@@ -22,7 +22,7 @@ const Crewmate = (props) => {
   return (
     <Wrapper colour={colour} isActive={crewmate.isActive}>
       <Avatar src={src} onClick={handleActiveCrewmate} />
-      <CheckList />
+      <CheckList isActive={crewmate.isActive} />
     </Wrapper>
   );
 }

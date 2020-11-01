@@ -20,6 +20,7 @@ export const Checkmark = styled.span`
   background-color: #eee;
   border-radius: 5px;
   border: 1px solid black;
+  cursor: pointer;
 
   &:after {
     content: "";
@@ -28,34 +29,31 @@ export const Checkmark = styled.span`
   }
 `;
 
-export const Checkbox = styled.input.attrs({ type: 'checkbox' })``;
-
 export const Container = styled.label`
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding-left: 35px;
-  cursor: pointer;
   font-size: 30px;
 
   input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
 
+    &:disabled ~ ${Checkmark} {
+      background-color: grey;
+      cursor: default;
+    }
+
     &:checked ~ ${Checkmark} {
+      background-color: ${props => props.colour};
+
       &:after {
         display: block;
       }
-    }
-  }
-
-  input {
-    &:checked ~ ${Checkmark} {
-      background-color: ${props => props.colour};
     }
   }
 
@@ -74,3 +72,4 @@ export const Container = styled.label`
   }
 `;
 
+export const Checkbox = styled.input.attrs({ type: 'checkbox' })``;

@@ -6,9 +6,18 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 export const Logo = styled.img`
   height: 100%;
+`;
+
+export const Label = styled.div`
+display: flex;
+justify-content: baseline;
+align-items: baseline;
+  height: 100%;
+  font-size: 3.5rem;
+  color: white;
 `;

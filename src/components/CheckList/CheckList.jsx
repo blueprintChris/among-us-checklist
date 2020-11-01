@@ -11,7 +11,7 @@ const CheckList = (props) => {
       {checklist.map(check =>
         <Check key={check.label} label={check.label} isActive={isActive} colour={check.colour} />
       )}
-      <Note placeholder="Notes..." />
+      <Note placeholder="Notes..." disabled={!isActive} />
     </Wrapper>
   );
 }
