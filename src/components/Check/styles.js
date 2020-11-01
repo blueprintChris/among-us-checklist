@@ -6,10 +6,6 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-
-  @media only screen and (max-width: 630px) {
-    margin-right: 10px;
-  }
 `;
 
 export const Checkmark = styled.span`
@@ -35,7 +31,8 @@ export const Container = styled.label`
   justify-content: center;
   position: relative;
   padding-left: 35px;
-  font-size: 30px;
+  font-size: 25px;
+  max-height: 20px;
 
   input {
     position: absolute;

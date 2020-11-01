@@ -10,7 +10,7 @@ const CheckList = (props) => {
       {Object.keys(crewmate.states).map(state =>
         <Check key={crewmate.states[state].name} crewmate={crewmate} state={state} isActive={isActive} />
       )}
-      <Note placeholder="Notes..." disabled={!isActive} />
+      {/* <Note placeholder="Notes..." disabled={!isActive} /> */}
     </Wrapper>
   );
 }

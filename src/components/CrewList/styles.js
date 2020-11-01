@@ -1,21 +1,36 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.ul`
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
+export const ListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  flex: 1;
 `;
 
 export const Label = styled.div`
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  font-size: 25px;
+  height: 22px;
+  font-size: 20px;
   color: white;
-  margin: 10px 0 5px 0;
+  margin-top: 7px;
+  margin-bottom: 5px;
 `;
 
 export const Subtext = styled.div`

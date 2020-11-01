@@ -5,8 +5,8 @@ background: url('images/space-tile.gif');
   display: flex;
   justify-content: center;
   min-width: 330px;
-  height: calc(100vh - 40px);
   padding: 20px;
+  height: calc(100vh - 40px);
 `;
 
 export const Content = styled.div`

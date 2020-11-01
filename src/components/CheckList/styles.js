@@ -5,16 +5,12 @@ export const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+  flex: 1;
   font-weight: 600;
-
-  @media only screen and (max-width: 630px) {
-    flex-wrap: wrap;
-  }
 `;
 
 export const Note = styled.input`
-  height: 20px;
+  max-height: 20px;
   flex: 1;
   border-radius: 5px;
   border: 1px solid grey;
