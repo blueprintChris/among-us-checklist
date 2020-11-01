@@ -1,15 +1,14 @@
 import React from 'react';
 import { Wrapper, Note } from './styles';
 import Check from '../Check';
-import { checklist } from '../../data';
 
 const CheckList = (props) => {
-  const { isActive } = props;
+  const { isActive, crewmate } = props;
 
   return (
     <Wrapper>
-      {checklist.map(check =>
-        <Check key={check.label} label={check.label} isActive={isActive} colour={check.colour} />
+      {Object.keys(crewmate.states).map(state =>
+        <Check key={state.name} crewmate={crewmate} state={state} isActive={isActive} />
       )}
       <Note placeholder="Notes..." disabled={!isActive} />
     </Wrapper>

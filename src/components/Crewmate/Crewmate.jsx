@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import CrewContext from '../../context/CrewContext';
 import CheckList from '../CheckList'
-import { Wrapper, Avatar } from './styles';
+import { Wrapper, Avatar, ImgWrapper } from './styles';
 
 const Crewmate = (props) => {
   const { crewList, setCrewList } = useContext(CrewContext);
   const { crewmate } = props;
-  const { src, colour } = crewmate;
+  const { src, deadSrc, colour } = crewmate;
 
   const handleActiveCrewmate = () => {
     const newCrewmate = { ...crewmate };
@@ -21,8 +21,10 @@ const Crewmate = (props) => {
 
   return (
     <Wrapper colour={colour} isActive={crewmate.isActive}>
-      <Avatar src={src} onClick={handleActiveCrewmate} />
-      <CheckList isActive={crewmate.isActive} />
+      <ImgWrapper>
+        <Avatar src={!crewmate.states.isDead.state ? src : deadSrc} onClick={handleActiveCrewmate} />
+      </ImgWrapper>
+      <CheckList isActive={crewmate.isActive} crewmate={crewmate} />
     </Wrapper>
   );
 }

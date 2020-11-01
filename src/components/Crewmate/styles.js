@@ -16,13 +16,21 @@ export const Wrapper = styled.li`
   }
 `;
 
-
-export const Avatar = styled.img`
-  width: 30px;
+export const ImgWrapper = styled.div`
+  min-width: 40px;
+  height: 40px;
   margin-right: 20px;
   cursor: pointer;
+  display: flex;
+  justify-content: flex;
+  align-items: flex;
+
 
   @media only screen and (max-width: 630px) {
     width: 30px;
   }
+`;
+
+export const Avatar = styled.img`
+  height: 100%;
 `;

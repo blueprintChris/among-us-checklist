@@ -14,9 +14,9 @@ export const Logo = styled.img`
 `;
 
 export const Label = styled.div`
-display: flex;
-justify-content: baseline;
-align-items: baseline;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
   height: 100%;
   font-size: 3.5rem;
   color: white;
