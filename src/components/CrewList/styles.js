@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 0 auto;
 `;
 
 export const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 0 auto;
 `;
 
-export const List = styled.ul`
+export const List = styled.div`
   display: flex;
   flex-direction: column;
   list-style-type: none;

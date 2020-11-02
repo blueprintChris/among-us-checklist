@@ -16,15 +16,11 @@ const CrewList = (props) => {
             {crew.map(crewmate =>
               crewmate.isActive && <Crewmate key={crewmate.name} crewmate={crewmate} />
             )}
-          </List>
-        </ListWrapper>
-      }
-      <ImposterList />
-      {crew.find(crewmate =>
-        !crewmate.isActive) &&
-        <ListWrapper>
-          <Label>Inactive Crewmates</Label>
-          <List>
+            <ImposterList />
+            {crew.find(crewmate =>
+              !crewmate.isActive) &&
+              <Label>Inactive Crewmates</Label>
+            }
             {crew.map(crewmate =>
               !crewmate.isActive && <Crewmate key={crewmate.name} crewmate={crewmate} />
             )}
