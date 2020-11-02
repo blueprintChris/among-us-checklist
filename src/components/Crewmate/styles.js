@@ -19,7 +19,8 @@ export const ImgWrapper = styled.div`
   margin-right: 20px;
 
   @media only screen and (max-width: 630px) {
-    margin-right: 10px;
+    margin-right: 30px;
+    margin-top: -5px;
     width: 20px;
   }
 `;
@@ -28,4 +29,8 @@ export const Avatar = styled.img`
   height: 100%;
   position: absolute;
   cursor: pointer;
+
+  @media only screen and (max-width: 630px) {
+    height: 130%;
+  }
 `

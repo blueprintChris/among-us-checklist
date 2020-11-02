@@ -11,8 +11,8 @@ const CrewList = (props) => {
       {crew.find(crewmate =>
         crewmate.isActive) &&
         <ListWrapper>
-          <Label>Active Crewmates<Subtext>&nbsp;(Click on crewmate to remove from game)</Subtext></Label>
           <List>
+            <Label>Active Crewmates<Subtext>&nbsp;(Click on crewmate to remove from game)</Subtext></Label>
             {crew.map(crewmate =>
               crewmate.isActive && <Crewmate key={crewmate.name} crewmate={crewmate} />
             )}
