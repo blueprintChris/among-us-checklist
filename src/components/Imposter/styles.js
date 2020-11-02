@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   height: 30px;
-  width: 30px;
-  margin: 0 5px;
-  margin-bottom: 5px;
+  margin-right: 5px;
 
-  @media only screen and (max-width: 630px) {
-    margin: 0 2px;
-    margin-bottom: 2px;
+  @media only screen and (max-width: 420px) {
+    margin-right: 5px;
+    height: 20px;
+  }
+
+  @media only screen and (max-width: 380px) {
+    margin-right: 4px;
+    height: 16px;
   }
 `;
 

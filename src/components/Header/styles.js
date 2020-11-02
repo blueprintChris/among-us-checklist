@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 50px;
+  margin-bottom: 10px;
 
   @media only screen and (max-width: 630px) {
     height: 30px;

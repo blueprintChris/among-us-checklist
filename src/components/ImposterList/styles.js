@@ -5,17 +5,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 10px;
-
-  @media only screen and (max-width: 630px) {
-    margin-top: 5px;
-  }
+  margin: 10px 0;
+  align-items: center;
+  position: relative;
 `;
 
 export const Label = styled.div`
-  font-size: 25px;
+  font-size: 20px;
   color: white;
-  margin-right: 20px;
+  margin-right: 10px;
 `;
-
-

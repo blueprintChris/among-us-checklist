@@ -7,11 +7,10 @@ import { crew } from './data'
 
 function App() {
   const [crewList, setCrewList] = useState(crew);
-  const [imposterList, setImposterList] = useState(crew);
 
   return (
     <Wrapper>
-      <CrewContext.Provider value={{ crewList, setCrewList, imposterList, setImposterList }}>
+      <CrewContext.Provider value={{ crewList, setCrewList }}>
         <Content>
           <Header />
           <CrewList crew={crewList} />

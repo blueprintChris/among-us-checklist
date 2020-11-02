@@ -10,18 +10,13 @@ const CrewList = (props) => {
     <Wrapper>
       <ListWrapper>
         <List>
-          {crew.find(crewmate =>
-            crewmate.isActive) &&
-            <Label>Active Crewmates<Subtext>&nbsp;(Tap on crewmate to remove from game)</Subtext></Label>
-          }
+          <ImposterList />
+          <Label>Active Crewmates<Subtext>&nbsp;(Tap on crewmate to add/remove from game)</Subtext></Label>
           {crew.map(crewmate =>
             crewmate.isActive && <Crewmate key={crewmate.name} crewmate={crewmate} />
           )}
-          <ImposterList />
-          {crew.find(crewmate =>
-            !crewmate.isActive) &&
-            <Label>Inactive Crewmates</Label>
-          }
+          <Label>{crew.find(crewmate =>
+            !crewmate.isActive) && "Inactive Crewmates"}</Label>
           {crew.map(crewmate =>
             !crewmate.isActive && <Crewmate key={crewmate.name} crewmate={crewmate} />
           )}

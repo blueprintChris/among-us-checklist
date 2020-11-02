@@ -21,7 +21,6 @@ const Crewmate = (props) => {
 
   return (
     <Wrapper colour={colour} isActive={crewmate.isActive}>
-      {/* {!crewmate.isActive && <Strikethrough />} */}
       <ImgWrapper>
         <Avatar src={!crewmate.states.isDead.state ? src : deadSrc} isActive={crewmate.isActive} onClick={handleActiveCrewmate} />
       </ImgWrapper>
