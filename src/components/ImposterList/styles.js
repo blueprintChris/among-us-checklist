@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 10px;
+
+  @media only screen and (max-width: 630px) {
+    margin-top: 5px;
+  }
 `;
 
 export const Label = styled.div`
