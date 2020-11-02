@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const Link = styled.a`
+  text-decoration: none;
+  height: 100%;
+`;
+
 export const Logo = styled.img`
   height: 100%;
 `;

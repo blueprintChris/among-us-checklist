@@ -1,10 +1,12 @@
 import React from 'react';
-import { Wrapper, Logo, Label } from './styles';
+import { Wrapper, Logo, Label, Link } from './styles';
 
 const Header = () => {
   return (
     <Wrapper>
-      <Logo src="images/logo-white.png" /><Label>mong Us: Crewmate Checklist</Label>
+      <Link href="/"><Logo src="images/logo-white.png" /></Link>
+      <Label>mong Us: Crewmate Checklist</Label>
+
     </Wrapper>
   );
 }

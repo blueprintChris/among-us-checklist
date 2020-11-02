@@ -40,4 +40,15 @@ export const Avatar = styled.img`
   @media only screen and (max-width: 630px) {
     height: 100%;
   }
+`
+export const Strikethrough = styled.div`
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(197,9,9,1) 10%, rgba(197,9,9,1) 90%, rgba(197,9,9,0) 100%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+  border-radius: 100%;
 `;

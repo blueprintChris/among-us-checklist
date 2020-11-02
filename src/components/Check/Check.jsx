@@ -15,12 +15,12 @@ const Check = (props) => {
 
     const newCrewList = [...crewList];
     const index = newCrewList.indexOf(crewmate);
-    newCrewList.splice(index, 1, updatedCrewmate);
 
-    console.log(newCrewList)
+    if (updatedCrewmate.states.isDead.state) {
+      newCrewList.push(newCrewList.splice(index, 1)[0])
+    }
 
     setCrewList(newCrewList);
-
   };
 
   return (

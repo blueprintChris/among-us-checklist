@@ -5,7 +5,6 @@ import { Wrapper, Label } from './styles';
 
 const ImposterList = () => {
   const { crewList } = useContext(CrewContext);
-  console.log(crewList)
 
   return (
     <Wrapper>
