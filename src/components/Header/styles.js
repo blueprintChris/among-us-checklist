@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 50px;
   margin-bottom: 10px;
 
@@ -33,4 +33,27 @@ export const Label = styled.div`
   @media only screen and (max-width: 630px) {
     font-size: 2.1rem;
   }
+`;
+
+export const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
+
+export const SubtextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
+
+export const Subtext = styled.div`
+  margin-top: 5px;
+  align-self: flex-end;
+  font-size: 0.8rem;
+  color: white;
 `;

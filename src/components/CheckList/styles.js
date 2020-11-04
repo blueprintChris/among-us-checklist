@@ -4,19 +4,40 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
   flex: 1;
   font-weight: 600;
+  justify-content: space-between;
 `;
 
-export const Note = styled.input`
+
+export const Name = styled.input`
   max-height: 20px;
-  flex: 1;
   border-radius: 5px;
   border: 1px solid grey;
   padding: 5px;
   line-height: 1.2rem;
-  min-width: 200px;
+  font-family: 'Joffrey';
+  font-size: 25px;  
+  max-width: 100px;
+
+  &:enabled {
+    background-color: rgba(0,0,0,0);
+    &::placeholder  {
+      color: black;
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    display: none;
+  }
+`;
+
+export const Note = styled.input`
+  max-height: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+  line-height: 1.2rem;
   font-family: 'Joffrey';
   font-size: 25px;
 

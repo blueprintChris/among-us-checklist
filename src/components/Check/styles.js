@@ -5,17 +5,14 @@ export const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  flex-grow: 2;
 `;
 
 export const Checkmark = styled.span`
   position: absolute;
   left: 0;
-  height: 25px;
-  width: 25px;
   background-color: #eee;
   border-radius: 5px;
-  border: 1px solid black;
   cursor: pointer;
 
   &:after {
@@ -31,8 +28,8 @@ export const Container = styled.label`
   justify-content: center;
   position: relative;
   padding-left: 35px;
-  font-size: 25px;
-  max-height: 20px;
+  font-size: ${props => props.textSize};
+  color: ${props => !props.isActive ? props.textColour : '#666666'};
 
   input {
     position: absolute;
@@ -55,6 +52,10 @@ export const Container = styled.label`
   }
 
   ${Checkmark} {
+    height: ${props => props.size};
+    width: ${props => props.size};
+    border: 1px solid ${props => !props.isActive ? '#000000' : '#666666'};
+
     &:after {
       left: 9px;
       top: 4px;

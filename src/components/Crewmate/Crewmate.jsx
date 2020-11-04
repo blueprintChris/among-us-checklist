@@ -20,7 +20,6 @@ const Crewmate = (props) => {
     const index = newCrewList.indexOf(crewmate);
 
     newCrewList.splice(index, 1, newCrewmate);
-
     setCrewList(newCrewList);
   };
 

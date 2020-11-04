@@ -1,16 +1,18 @@
 import styled from 'styled-components';
+import { hex2rgba } from '../../helpers/hex2Rgba';
 
 export const Wrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
   align-items: center;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
   width: 100%;
   padding: 10px 20px;
   box-sizing: border-box;
   position: relative;
-  background-color: ${props => props.isActive ? '#cccccc' : 'grey'};
+  background-color: #cccccc;
+  /* background: linear-gradient(90deg, ${props => hex2rgba(props.colour, 0.8)} 0%, #cccccc 40%, #cccccc 100%); */
 
   @media only screen and (max-width: 630px) {
     padding: 5px 10px;
@@ -33,6 +35,8 @@ export const ImgWrapper = styled.div`
 export const Avatar = styled.img`
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   cursor: pointer;
 
   ${props => !props.isActive && `opacity: 0.5;`}
